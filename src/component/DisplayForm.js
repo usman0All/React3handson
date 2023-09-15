@@ -1,4 +1,3 @@
-
 import { Component } from 'react'
 import './style.css'
 class DisplayForm extends Component{
@@ -14,9 +13,9 @@ class DisplayForm extends Component{
         {this.props.value.map((item,index)=>{
             return(
                 <div className='child'>
-                <span key={index}>{item.name}</span>
-                <span key={index}>{item.dept}</span>
-                <span key={index}>{item.Rating}</span>
+                <span key={index} style={{fontWeight:"bold"}}>Name: {item.name} |</span>
+                <span key={index} style={{fontWeight:"bold"}}>Department: {item.dept} |</span>
+                <span key={index} style={{fontWeight:"bold"}}>Rating: {item.Rating}</span>
                 </div>
                 )
                 })}
